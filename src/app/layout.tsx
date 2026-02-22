@@ -13,22 +13,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "F1 Portfolio | T V L Bharathwaj",
-  description: "Interactive 3D Formula 1 themed portfolio showcasing full-stack development skills",
-  keywords: "F1, Formula 1, Portfolio, 3D, Three.js, React, Next.js, Developer, Full Stack",
+  title: "T V L Bharathwaj | Portfolio",
+  description: "AI/ML Engineer & Full Stack Developer — Interactive 3D portfolio by T V L Bharathwaj",
+  keywords: "AI, ML, GenAI, Full Stack, Portfolio, Next.js, React, Developer, T V L Bharathwaj",
   authors: [{ name: "T V L Bharathwaj" }],
   creator: "T V L Bharathwaj",
-  publisher: "T V L Bharathwaj",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+  },
   openGraph: {
-    title: "F1 Portfolio | T V L Bharathwaj",
-    description: "Interactive 3D Formula 1 themed portfolio showcasing full-stack development skills",
+    title: "T V L Bharathwaj | Portfolio",
+    description: "AI/ML Engineer & Full Stack Developer — Interactive 3D portfolio by T V L Bharathwaj",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "F1 Portfolio | T V L Bharathwaj",
-    description: "Interactive 3D Formula 1 themed portfolio showcasing full-stack development skills",
+    title: "T V L Bharathwaj | Portfolio",
+    description: "AI/ML Engineer & Full Stack Developer — Interactive 3D portfolio by T V L Bharathwaj",
   },
 };
 

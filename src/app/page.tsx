@@ -20,6 +20,36 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Dynamic page title per section
+  useEffect(() => {
+    const sectionTitles: Record<string, string> = {
+      about: '🏎️ T V L Bharathwaj | About',
+      projects: '🏎️ T V L Bharathwaj | Projects',
+      experience: '🏎️ T V L Bharathwaj | Experience',
+      skills: '🏎️ T V L Bharathwaj | Skills',
+      contact: '🏎️ T V L Bharathwaj | Contact',
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            document.title = sectionTitles[id] ?? '🏎️ T V L Bharathwaj | Portfolio';
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    Object.keys(sectionTitles).forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="relative min-h-screen bg-black text-white overflow-x-hidden">
       {/* Persistent animated particle background */}
