@@ -1,7 +1,22 @@
 {
-  "name": "port",
-  "version": "0.1.0",
+  "name": "f1-portfolio",
+  "version": "1.0.0",
   "private": true,
+  "description": "Interactive 3D Formula 1 themed portfolio website built with Next.js, React Three Fiber, and Tailwind CSS",
+  "keywords": [
+    "nextjs",
+    "react",
+    "threejs",
+    "portfolio",
+    "3d",
+    "formula1",
+    "f1",
+    "webgl",
+    "typescript",
+    "tailwindcss"
+  ],
+  "author": "T V L Bharathwaj",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,18 +24,31 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "@react-three/postprocessing": "^3.0.4",
+    "@supabase/supabase-js": "^2.95.3",
+    "framer-motion": "^12.34.0",
+    "leva": "^0.10.1",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "three": "^0.182.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/three": "^0.182.0",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
